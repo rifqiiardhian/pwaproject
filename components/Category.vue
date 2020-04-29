@@ -13,6 +13,7 @@
             class="mb-2"
         >
             <h6 class="category-text">{{ data.strCategory }}</h6>
+            <b-card-text>{{ data.strCategoryDescription | truncate(50, '...')}}</b-card-text>
         </b-card>
     </b-col>
 </b-row>
@@ -30,6 +31,15 @@ export default {
         axios.get(BASEURI).then((result) => {
             this.datacategory = result.data.categories
         })
+    },
+    filters: {
+        truncate: function(value, length, suffix) {
+            if (value.length > length) {
+                return value.substring(0, length) + suffix
+            } else {
+                return value
+            }
+        }
     }
 }
 </script>

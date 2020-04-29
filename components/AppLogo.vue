@@ -106,5 +106,29 @@
     left: 70px;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .row-banner {
+    text-align: center;
+  }
+  .title {
+    font-size: 45px;
+  }
+
+  .subtitle {
+    font-size: 25px;
+  }
+
+  .VueToNuxtLogo {
+    left: -35px;
+    display: inline-block;
+    animation: turn 2s linear forwards 1s;
+    transform: rotateX(180deg);
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    width: 200px;
+  }
+}
 </style>
 

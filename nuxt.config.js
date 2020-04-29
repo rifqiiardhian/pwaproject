@@ -35,6 +35,7 @@ module.exports = {
       }
     }
   },
+  plugins:  [{  src:  "@/plugins/filters.js"  }],
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
