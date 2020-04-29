@@ -1,13 +1,27 @@
 <template>
-  <div class="VueToNuxtLogo">
-    <div class="Triangle Triangle--two"/>
-    <div class="Triangle Triangle--one"/>
-    <div class="Triangle Triangle--three"/>
-    <div class="Triangle Triangle--four"/>
-  </div>
+  <b-row class="row-banner">
+    <b-col>
+      <div class="VueToNuxtLogo">
+        <div class="Triangle Triangle--two"/>
+        <div class="Triangle Triangle--one"/>
+        <div class="Triangle Triangle--three"/>
+        <div class="Triangle Triangle--four"/>
+      </div>
+      <h1 class="title">
+        mealpwa
+      </h1>
+      <h2 class="subtitle">
+        PWA Meal App by Rifqi Ardhian
+      </h2>
+    </b-col>
+  </b-row>
 </template>
 
 <style>
+.row-banner {
+  background-color: #f5f5f5;
+  padding: 100px;
+}
 .VueToNuxtLogo {
   display: inline-block;
   animation: turn 2s linear forwards 1s;
@@ -57,6 +71,22 @@
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
   border-bottom: 60px solid #fff;
+}
+
+.title {
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
 }
 
 @keyframes turn {

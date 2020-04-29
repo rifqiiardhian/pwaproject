@@ -1,6 +1,6 @@
 <template>
-<b-row class="rowdata">
-    <b-col class="col-md-12 col-title">
+<b-row class="row-category">
+    <b-col class="col-md-12 mt-5 mb-4">
         <h3 class="category-title">Categories</h3>
     </b-col>
     <b-col class="col-md-2" v-for="(data, index) in datacategory" :key="index">
@@ -12,7 +12,7 @@
             style="max-width: 20rem;"
             class="mb-2"
         >
-            <h6>{{ data.strCategory }}</h6>
+            <h6 class="category-text">{{ data.strCategory }}</h6>
         </b-card>
     </b-col>
 </b-row>
@@ -34,12 +34,9 @@ export default {
 }
 </script>
 <style>
-.rowdata {
+.row-category {
+    background-color: none;
     margin: 50px;
-}
-.col-title {
-    margin-top: 100px;
-    margin-bottom: 30px;
 }
 .category-title {
     font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
@@ -48,5 +45,8 @@ export default {
     font-size: 50px;
     color: #35495e;
     letter-spacing: 1px;
+}
+.category-text {
+    text-align: center;
 }
 </style>

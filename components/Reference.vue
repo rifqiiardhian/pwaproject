@@ -1,6 +1,6 @@
 <template>
-<b-row class="rowdata">
-    <b-col class="col-md-12 col-title">
+<b-row class="row-ref">
+    <b-col class="col-md-12 mt-5 mb-4">
         <h1 class="reference-title">References</h1>
         <b-link href="https://scotch.io/tutorials/build-a-progressive-web-application-with-nuxtjs" class="link-ref">
             https://scotch.io/tutorials/build-a-progressive-web-application-with-nuxtjs
@@ -11,12 +11,11 @@
 </b-row>
 </template>
 <script>
-import axios from 'axios'
 export default {
 }
 </script>
 <style>
-.rowdata {
+.row-ref {
     margin: 50px;
 }
 .col-title {

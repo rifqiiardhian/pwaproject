@@ -1,6 +1,6 @@
 <template>
-<b-row class="rowdata">
-    <b-col class="col-md-12 col-title">
+<b-row class="row-meals">
+    <b-col class="col-md-12 mt-5 mb-4">
         <h1 class="meals-title">Canadian Food</h1>
     </b-col>
     <b-col class="col-md-3" v-for="(data, index) in datafood" :key="index">
@@ -34,11 +34,8 @@ export default {
 }
 </script>
 <style>
-.rowdata {
+.row-meals {
     margin: 50px;
-}
-.col-title {
-    margin-top: 50px;
 }
 .meals-title {
     font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
@@ -55,5 +52,6 @@ export default {
     font-size: 20px;
     color: #35495e;
     letter-spacing: 1px;
+    text-align: center;
 }
 </style>

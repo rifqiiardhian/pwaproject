@@ -1,10 +1,10 @@
 <template>
-<b-row class="rowdata">
-    <b-col class="col-md-12 col-title">
+<b-row class="row-area">
+    <b-col class="col-md-12 mt-5 mb-4">
         <h1 class="area-title">The Meals Country</h1>
     </b-col>
     <b-col class="col-md-1" v-for="(data, index) in dataarea" :key="index">
-        <p>{{ data.strArea }}</p>
+        <p class="area-text">{{ data.strArea }}</p>
     </b-col>
 </b-row>
 </template>
@@ -25,7 +25,7 @@ export default {
 }
 </script>
 <style>
-.rowdata {
+.row-area {
     margin: 50px;
 }
 .col-title {
@@ -38,5 +38,8 @@ export default {
     font-size: 50px;
     color: #35495e;
     letter-spacing: 1px;
+}
+.area-text {
+    text-align: center;
 }
 </style>
