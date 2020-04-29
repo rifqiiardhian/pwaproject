@@ -1,7 +1,8 @@
 # mealpwa
 
 > PWA Meal App Using Nuxt.JS
-> For the best Mobile view, using chrome responsive Pixel 2 Device
+<br/>
+For the best Mobile view, using chrome responsive Pixel 2 Device
 
 ## Build Setup
 
