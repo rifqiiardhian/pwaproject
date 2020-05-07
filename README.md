@@ -3,6 +3,8 @@
 PWA Meal App Using Nuxt.JS
 <br/>
 For the best Mobile view, use chrome responsive with Pixel 2 Devices
+<br/>
+Use Branch Testing to see the unit testing project
 
 ## Build Setup
 
